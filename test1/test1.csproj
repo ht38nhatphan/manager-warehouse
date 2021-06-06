@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD6C32E6-BB84-445E-94CD-8E01B17EDD57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>test1</RootNamespace>
+    <AssemblyName>test1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>E:\rong rong\frame word bunifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>E:\rong rong\frame word bunifu\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addformkhac\category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\category.Designer.cs">
+      <DependentUpon>category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addformkhac\product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addformkhac\Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add_category.Designer.cs">
+      <DependentUpon>Add_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add_customer.Designer.cs">
+      <DependentUpon>Add_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add_input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add_input.Designer.cs">
+      <DependentUpon>Add_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Add_output.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Add_output.Designer.cs">
+      <DependentUpon>Add_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\add_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\add_product.Designer.cs">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\add_supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\add_supplier.Designer.cs">
+      <DependentUpon>add_supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\add_unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\add_unit.Designer.cs">
+      <DependentUpon>add_unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cheack_the_case.cs" />
+    <Compile Include="dataservices.cs" />
+    <Compile Include="form_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_main.Designer.cs">
+      <DependentUpon>form_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Sign_up.Designer.cs">
+      <DependentUpon>form_Sign_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messagebox.cs" />
+    <Compile Include="print\printinput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\printinput.Designer.cs">
+      <DependentUpon>printinput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QL_KHO_HANGDataSet.cs">
+      <DependentUpon>QL_KHO_HANGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_KHO_HANGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KHO_HANGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="uscontrol.cs" />
+    <Compile Include="usercontrol\add_categories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\add_categories.Designer.cs">
+      <DependentUpon>add_categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\add_product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\add_product.Designer.cs">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\add_suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\add_suppliers.Designer.cs">
+      <DependentUpon>add_suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\us_input.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_input.Designer.cs">
+      <DependentUpon>us_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\us_output.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_output.Designer.cs">
+      <DependentUpon>us_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\us_statistical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_statistical.Designer.cs">
+      <DependentUpon>us_statistical.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addformkhac\category.resx">
+      <DependentUpon>category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addformkhac\product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addformkhac\Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add_category.resx">
+      <DependentUpon>Add_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add_customer.resx">
+      <DependentUpon>Add_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add_input.resx">
+      <DependentUpon>Add_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Add_output.resx">
+      <DependentUpon>Add_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\add_product.resx">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\add_supplier.resx">
+      <DependentUpon>add_supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\add_unit.resx">
+      <DependentUpon>add_unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_main.resx">
+      <DependentUpon>form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Sign_up.resx">
+      <DependentUpon>form_Sign_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printinput.resx">
+      <DependentUpon>printinput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\Report1.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\add_categories.resx">
+      <DependentUpon>add_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\add_product.resx">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\add_suppliers.resx">
+      <DependentUpon>add_suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_input.resx">
+      <DependentUpon>us_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_output.resx">
+      <DependentUpon>us_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_statistical.aa-DJ.resx">
+      <DependentUpon>us_statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_statistical.resx">
+      <DependentUpon>us_statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_KHO_HANGDataSet.xsc">
+      <DependentUpon>QL_KHO_HANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_KHO_HANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_KHO_HANGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_KHO_HANGDataSet.xss">
+      <DependentUpon>QL_KHO_HANGDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\add3_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\search_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\add_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\edit_property_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\trash_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\delete_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\save_as_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\edit_property1_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\print1_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\print2_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\close_sign_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\unavailable_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\box_300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\import_420px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
