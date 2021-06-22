@@ -90,17 +90,35 @@
     <Compile Include="addformkhac\category.Designer.cs">
       <DependentUpon>category.cs</DependentUpon>
     </Compile>
+    <Compile Include="addformkhac\customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="addformkhac\product.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addformkhac\product.Designer.cs">
       <DependentUpon>product.cs</DependentUpon>
     </Compile>
+    <Compile Include="addformkhac\product_output.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\product_output.Designer.cs">
+      <DependentUpon>product_output.cs</DependentUpon>
+    </Compile>
     <Compile Include="addformkhac\Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addformkhac\Supplier.Designer.cs">
       <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addformkhac\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addformkhac\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="Add\Add_category.cs">
       <SubType>Form</SubType>
@@ -144,6 +162,12 @@
     <Compile Include="Add\add_unit.Designer.cs">
       <DependentUpon>add_unit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add\users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
+    </Compile>
     <Compile Include="cheack_the_case.cs" />
     <Compile Include="dataservices.cs" />
     <Compile Include="form_main.cs">
@@ -158,12 +182,27 @@
     <Compile Include="form_Sign_up.Designer.cs">
       <DependentUpon>form_Sign_up.cs</DependentUpon>
     </Compile>
+    <Compile Include="md5.cs" />
     <Compile Include="messagebox.cs" />
+    <Compile Include="outputxsd.cs">
+      <DependentUpon>outputxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="outputxsd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>outputxsd.xsd</DependentUpon>
+    </Compile>
     <Compile Include="print\printinput.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="print\printinput.Designer.cs">
       <DependentUpon>printinput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\printoutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\printoutput.Designer.cs">
+      <DependentUpon>printoutput.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -200,6 +239,12 @@
     <Compile Include="usercontrol\add_suppliers.Designer.cs">
       <DependentUpon>add_suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontrol\us_customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_customer.Designer.cs">
+      <DependentUpon>us_customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontrol\us_input.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,20 +257,41 @@
     <Compile Include="usercontrol\us_output.Designer.cs">
       <DependentUpon>us_output.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontrol\us_product_warehouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_product_warehouse.Designer.cs">
+      <DependentUpon>us_product_warehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontrol\us_statistical.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="usercontrol\us_statistical.Designer.cs">
       <DependentUpon>us_statistical.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontrol\us_statistical_b1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\us_statistical_b1.Designer.cs">
+      <DependentUpon>us_statistical_b1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addformkhac\category.resx">
       <DependentUpon>category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addformkhac\customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addformkhac\product.resx">
       <DependentUpon>product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addformkhac\product_output.resx">
+      <DependentUpon>product_output.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addformkhac\Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addformkhac\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add\Add_category.resx">
       <DependentUpon>Add_category.cs</DependentUpon>
@@ -248,6 +314,9 @@
     <EmbeddedResource Include="Add\add_unit.resx">
       <DependentUpon>add_unit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add\users.resx">
+      <DependentUpon>users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_main.resx">
       <DependentUpon>form_main.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,7 +326,11 @@
     <EmbeddedResource Include="print\printinput.resx">
       <DependentUpon>printinput.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="print\printoutput.resx">
+      <DependentUpon>printoutput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="print\Report1.rdlc" />
+    <EmbeddedResource Include="print\Report2.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -272,11 +345,17 @@
     <EmbeddedResource Include="usercontrol\add_suppliers.resx">
       <DependentUpon>add_suppliers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_customer.resx">
+      <DependentUpon>us_customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usercontrol\us_input.resx">
       <DependentUpon>us_input.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrol\us_output.resx">
       <DependentUpon>us_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_product_warehouse.resx">
+      <DependentUpon>us_product_warehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontrol\us_statistical.aa-DJ.resx">
       <DependentUpon>us_statistical.cs</DependentUpon>
@@ -284,6 +363,20 @@
     <EmbeddedResource Include="usercontrol\us_statistical.resx">
       <DependentUpon>us_statistical.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\us_statistical_b1.resx">
+      <DependentUpon>us_statistical_b1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="outputxsd.xsc">
+      <DependentUpon>outputxsd.xsd</DependentUpon>
+    </None>
+    <None Include="outputxsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>outputxsd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="outputxsd.xss">
+      <DependentUpon>outputxsd.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

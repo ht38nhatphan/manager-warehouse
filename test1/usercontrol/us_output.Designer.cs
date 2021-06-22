@@ -29,41 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(us_output));
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OutputDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usoutput = new Guna.UI.WinForms.GunaElipse(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_total_amount = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btprint = new Guna.UI.WinForms.GunaButton();
             this.txtdate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.txtcategory = new Guna.UI.WinForms.GunaComboBox();
-            this.txtinput = new Guna.UI.WinForms.GunaTextBox();
+            this.txtoutput = new Guna.UI.WinForms.GunaTextBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.btdelete = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btedit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btadd = new Bunifu.Framework.UI.BunifuImageButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btprint = new Guna.UI.WinForms.GunaButton();
+            this.btdelete = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btedit = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btadd = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btdelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btedit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btadd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,36 +80,38 @@
             // 
             // bunifuCustomDataGrid2
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FirstName,
             this.ProductName,
             this.CategoryName,
+            this.Column1,
             this.NameUnit,
-            this.Quantity,
+            this.Column3,
+            this.Column2,
             this.OutputDate,
-            this.Note});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column4});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
@@ -116,50 +120,72 @@
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid2.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1571, 476);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1578, 582);
             this.bunifuCustomDataGrid2.TabIndex = 39;
+            this.bunifuCustomDataGrid2.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_RowEnter);
             // 
             // FirstName
             // 
+            this.FirstName.DataPropertyName = "FirstName";
             this.FirstName.HeaderText = "Tên Khách Hàng";
             this.FirstName.Name = "FirstName";
             this.FirstName.Width = 250;
             // 
             // ProductName
             // 
+            this.ProductName.DataPropertyName = "ProductName";
             this.ProductName.HeaderText = "Tên Sản Phẩm";
             this.ProductName.Name = "ProductName";
             this.ProductName.Width = 300;
             // 
             // CategoryName
             // 
+            this.CategoryName.DataPropertyName = "CategoryName";
             this.CategoryName.HeaderText = "Tên Loại Sản Phẩm";
             this.CategoryName.Name = "CategoryName";
             this.CategoryName.Width = 300;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "CompanyName";
+            this.Column1.HeaderText = "Tên Nhà Cung Cấp";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
+            // 
             // NameUnit
             // 
+            this.NameUnit.DataPropertyName = "NameUnit";
             this.NameUnit.HeaderText = "Tên Loại Đơn Vị Tính";
             this.NameUnit.Name = "NameUnit";
             this.NameUnit.Width = 200;
             // 
-            // Quantity
+            // Column3
             // 
-            this.Quantity.HeaderText = "Số Lượng Xuất";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 250;
+            this.Column3.DataPropertyName = "Quantity";
+            this.Column3.HeaderText = "Số Lượng";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "OutputPrice";
+            this.Column2.HeaderText = "Giá";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
             // 
             // OutputDate
             // 
+            this.OutputDate.DataPropertyName = "OutputDate";
             this.OutputDate.HeaderText = "Ngày Xuất ";
             this.OutputDate.Name = "OutputDate";
             this.OutputDate.Width = 200;
             // 
-            // Note
+            // Column4
             // 
-            this.Note.HeaderText = "Ghi Chú";
-            this.Note.Name = "Note";
-            this.Note.Width = 300;
+            this.Column4.DataPropertyName = "Note";
+            this.Column4.HeaderText = "Note";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 300;
             // 
             // usoutput
             // 
@@ -175,7 +201,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(47, 193);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1629, 617);
+            this.groupBox1.Size = new System.Drawing.Size(1629, 746);
             this.groupBox1.TabIndex = 70;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phiếu Nhập";
@@ -183,7 +209,7 @@
             // txt_total_amount
             // 
             this.txt_total_amount.AutoSize = true;
-            this.txt_total_amount.Location = new System.Drawing.Point(175, 560);
+            this.txt_total_amount.Location = new System.Drawing.Point(161, 671);
             this.txt_total_amount.Name = "txt_total_amount";
             this.txt_total_amount.Size = new System.Drawing.Size(0, 24);
             this.txt_total_amount.TabIndex = 44;
@@ -191,37 +217,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(53, 560);
+            this.label9.Location = new System.Drawing.Point(39, 671);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 43;
             this.label9.Text = "Tổng tiền :";
-            // 
-            // btprint
-            // 
-            this.btprint.AnimationHoverSpeed = 0.07F;
-            this.btprint.AnimationSpeed = 0.03F;
-            this.btprint.BackColor = System.Drawing.Color.Transparent;
-            this.btprint.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.btprint.BorderColor = System.Drawing.Color.Black;
-            this.btprint.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btprint.FocusedColor = System.Drawing.Color.Empty;
-            this.btprint.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btprint.ForeColor = System.Drawing.Color.White;
-            this.btprint.Image = global::test1.Properties.Resources.print2_300px;
-            this.btprint.ImageSize = new System.Drawing.Size(30, 30);
-            this.btprint.Location = new System.Drawing.Point(1446, 544);
-            this.btprint.Name = "btprint";
-            this.btprint.OnHoverBaseColor = System.Drawing.Color.CadetBlue;
-            this.btprint.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btprint.OnHoverForeColor = System.Drawing.Color.White;
-            this.btprint.OnHoverImage = null;
-            this.btprint.OnPressedColor = System.Drawing.Color.Black;
-            this.btprint.Radius = 8;
-            this.btprint.Size = new System.Drawing.Size(177, 40);
-            this.btprint.TabIndex = 42;
-            this.btprint.Text = "In";
-            this.btprint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtdate
             // 
@@ -243,8 +243,9 @@
             this.txtdate.OnPressedColor = System.Drawing.Color.Black;
             this.txtdate.Size = new System.Drawing.Size(267, 36);
             this.txtdate.TabIndex = 69;
-            this.txtdate.Text = "5/15/2021";
-            this.txtdate.Value = new System.DateTime(2021, 5, 15, 17, 42, 21, 782);
+            this.txtdate.Text = "6/17/2021";
+            this.txtdate.Value = new System.DateTime(2021, 6, 17, 12, 46, 13, 0);
+            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
             // 
             // txtcategory
             // 
@@ -267,24 +268,25 @@
             this.txtcategory.Size = new System.Drawing.Size(267, 29);
             this.txtcategory.TabIndex = 68;
             this.txtcategory.Tag = "Chọn theo loại";
+            this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
             // 
-            // txtinput
+            // txtoutput
             // 
-            this.txtinput.BaseColor = System.Drawing.Color.White;
-            this.txtinput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtinput.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtinput.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtinput.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtinput.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtinput.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtinput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtinput.Location = new System.Drawing.Point(1189, 107);
-            this.txtinput.Name = "txtinput";
-            this.txtinput.PasswordChar = '\0';
-            this.txtinput.SelectedText = "";
-            this.txtinput.Size = new System.Drawing.Size(267, 36);
-            this.txtinput.TabIndex = 64;
-            this.txtinput.Tag = "";
+            this.txtoutput.BaseColor = System.Drawing.Color.White;
+            this.txtoutput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtoutput.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtoutput.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtoutput.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtoutput.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtoutput.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtoutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtoutput.Location = new System.Drawing.Point(1189, 107);
+            this.txtoutput.Name = "txtoutput";
+            this.txtoutput.PasswordChar = '\0';
+            this.txtoutput.SelectedText = "";
+            this.txtoutput.Size = new System.Drawing.Size(267, 36);
+            this.txtoutput.TabIndex = 64;
+            this.txtoutput.Tag = "";
             // 
             // gunaButton1
             // 
@@ -312,45 +314,6 @@
             this.gunaButton1.Text = "Lọc";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
-            // 
-            // btdelete
-            // 
-            this.btdelete.BackColor = System.Drawing.Color.White;
-            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
-            this.btdelete.ImageActive = null;
-            this.btdelete.Location = new System.Drawing.Point(163, 96);
-            this.btdelete.Name = "btdelete";
-            this.btdelete.Size = new System.Drawing.Size(40, 40);
-            this.btdelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btdelete.TabIndex = 65;
-            this.btdelete.TabStop = false;
-            this.btdelete.Zoom = 10;
-            // 
-            // btedit
-            // 
-            this.btedit.BackColor = System.Drawing.Color.White;
-            this.btedit.Image = ((System.Drawing.Image)(resources.GetObject("btedit.Image")));
-            this.btedit.ImageActive = null;
-            this.btedit.Location = new System.Drawing.Point(104, 97);
-            this.btedit.Name = "btedit";
-            this.btedit.Size = new System.Drawing.Size(40, 40);
-            this.btedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btedit.TabIndex = 66;
-            this.btedit.TabStop = false;
-            this.btedit.Zoom = 10;
-            // 
-            // btadd
-            // 
-            this.btadd.BackColor = System.Drawing.Color.White;
-            this.btadd.Image = ((System.Drawing.Image)(resources.GetObject("btadd.Image")));
-            this.btadd.ImageActive = null;
-            this.btadd.Location = new System.Drawing.Point(48, 96);
-            this.btadd.Name = "btadd";
-            this.btadd.Size = new System.Drawing.Size(40, 40);
-            this.btadd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btadd.TabIndex = 67;
-            this.btadd.TabStop = false;
-            this.btadd.Zoom = 10;
             // 
             // label3
             // 
@@ -394,6 +357,76 @@
             this.bunifuImageButton1.TabIndex = 81;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // btprint
+            // 
+            this.btprint.AnimationHoverSpeed = 0.07F;
+            this.btprint.AnimationSpeed = 0.03F;
+            this.btprint.BackColor = System.Drawing.Color.Transparent;
+            this.btprint.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.btprint.BorderColor = System.Drawing.Color.Black;
+            this.btprint.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btprint.FocusedColor = System.Drawing.Color.Empty;
+            this.btprint.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btprint.ForeColor = System.Drawing.Color.White;
+            this.btprint.Image = global::test1.Properties.Resources.print2_300px;
+            this.btprint.ImageSize = new System.Drawing.Size(30, 30);
+            this.btprint.Location = new System.Drawing.Point(1432, 655);
+            this.btprint.Name = "btprint";
+            this.btprint.OnHoverBaseColor = System.Drawing.Color.CadetBlue;
+            this.btprint.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btprint.OnHoverForeColor = System.Drawing.Color.White;
+            this.btprint.OnHoverImage = null;
+            this.btprint.OnPressedColor = System.Drawing.Color.Black;
+            this.btprint.Radius = 8;
+            this.btprint.Size = new System.Drawing.Size(177, 40);
+            this.btprint.TabIndex = 42;
+            this.btprint.Text = "In";
+            this.btprint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btprint.Click += new System.EventHandler(this.btprint_Click);
+            // 
+            // btdelete
+            // 
+            this.btdelete.BackColor = System.Drawing.Color.White;
+            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
+            this.btdelete.ImageActive = null;
+            this.btdelete.Location = new System.Drawing.Point(163, 96);
+            this.btdelete.Name = "btdelete";
+            this.btdelete.Size = new System.Drawing.Size(40, 40);
+            this.btdelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btdelete.TabIndex = 65;
+            this.btdelete.TabStop = false;
+            this.btdelete.Zoom = 10;
+            this.btdelete.Click += new System.EventHandler(this.btdelete_Click);
+            // 
+            // btedit
+            // 
+            this.btedit.BackColor = System.Drawing.Color.White;
+            this.btedit.Image = ((System.Drawing.Image)(resources.GetObject("btedit.Image")));
+            this.btedit.ImageActive = null;
+            this.btedit.Location = new System.Drawing.Point(104, 97);
+            this.btedit.Name = "btedit";
+            this.btedit.Size = new System.Drawing.Size(40, 40);
+            this.btedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btedit.TabIndex = 66;
+            this.btedit.TabStop = false;
+            this.btedit.Zoom = 10;
+            this.btedit.Click += new System.EventHandler(this.btedit_Click_1);
+            // 
+            // btadd
+            // 
+            this.btadd.BackColor = System.Drawing.Color.White;
+            this.btadd.Image = ((System.Drawing.Image)(resources.GetObject("btadd.Image")));
+            this.btadd.ImageActive = null;
+            this.btadd.Location = new System.Drawing.Point(48, 96);
+            this.btadd.Name = "btadd";
+            this.btadd.Size = new System.Drawing.Size(40, 40);
+            this.btadd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btadd.TabIndex = 67;
+            this.btadd.TabStop = false;
+            this.btadd.Zoom = 10;
+            this.btadd.Click += new System.EventHandler(this.btadd_Click);
             // 
             // us_output
             // 
@@ -407,7 +440,7 @@
             this.Controls.Add(this.txtdate);
             this.Controls.Add(this.txtcategory);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtinput);
+            this.Controls.Add(this.txtoutput);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btdelete);
@@ -419,10 +452,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btdelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btedit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btadd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,18 +468,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI.WinForms.GunaDateTimePicker txtdate;
         private Guna.UI.WinForms.GunaComboBox txtcategory;
-        private Guna.UI.WinForms.GunaTextBox txtinput;
+        private Guna.UI.WinForms.GunaTextBox txtoutput;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Bunifu.Framework.UI.BunifuImageButton btdelete;
         private Bunifu.Framework.UI.BunifuImageButton btedit;
         private Bunifu.Framework.UI.BunifuImageButton btadd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameUnit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OutputDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Note;
         private System.Windows.Forms.Label txt_total_amount;
         private System.Windows.Forms.Label label9;
         private Guna.UI.WinForms.GunaButton btprint;
@@ -454,5 +480,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameUnit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OutputDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

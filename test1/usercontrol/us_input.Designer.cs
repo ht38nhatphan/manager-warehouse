@@ -50,7 +50,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btprint = new Guna.UI.WinForms.GunaButton();
             this.txtcategory = new Guna.UI.WinForms.GunaComboBox();
             this.txtdate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.btsearch = new Guna.UI.WinForms.GunaButton();
@@ -61,6 +60,7 @@
             this.btdelete = new Bunifu.Framework.UI.BunifuImageButton();
             this.btedit = new Bunifu.Framework.UI.BunifuImageButton();
             this.btadd = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btprint = new Guna.UI.WinForms.GunaButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 44);
+            this.label1.Location = new System.Drawing.Point(36, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 40);
             this.label1.TabIndex = 13;
@@ -94,7 +94,7 @@
             this.txtinput.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtinput.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtinput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtinput.Location = new System.Drawing.Point(1204, 125);
+            this.txtinput.Location = new System.Drawing.Point(1181, 110);
             this.txtinput.Name = "txtinput";
             this.txtinput.PasswordChar = '\0';
             this.txtinput.SelectedText = "";
@@ -250,6 +250,166 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 200;
             // 
+            // txtcategory
+            // 
+            this.txtcategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtcategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtcategory.BackColor = System.Drawing.Color.Transparent;
+            this.txtcategory.BaseColor = System.Drawing.Color.White;
+            this.txtcategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtcategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtcategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtcategory.FocusedColor = System.Drawing.Color.Empty;
+            this.txtcategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtcategory.ForeColor = System.Drawing.Color.Black;
+            this.txtcategory.FormattingEnabled = true;
+            this.txtcategory.ItemHeight = 23;
+            this.txtcategory.Location = new System.Drawing.Point(908, 110);
+            this.txtcategory.Name = "txtcategory";
+            this.txtcategory.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtcategory.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.txtcategory.Size = new System.Drawing.Size(267, 29);
+            this.txtcategory.TabIndex = 61;
+            this.txtcategory.Tag = "Chọn theo loại";
+            this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
+            this.txtcategory.Click += new System.EventHandler(this.txtcategory_Click);
+            // 
+            // txtdate
+            // 
+            this.txtdate.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtdate.CustomFormat = null;
+            this.txtdate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txtdate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdate.ForeColor = System.Drawing.Color.White;
+            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtdate.Location = new System.Drawing.Point(635, 110);
+            this.txtdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.OnHoverBaseColor = System.Drawing.Color.White;
+            this.txtdate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtdate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtdate.OnPressedColor = System.Drawing.Color.Black;
+            this.txtdate.Size = new System.Drawing.Size(267, 36);
+            this.txtdate.TabIndex = 62;
+            this.txtdate.Text = "6/17/2021";
+            this.txtdate.Value = new System.DateTime(2021, 6, 17, 11, 58, 53, 0);
+            // 
+            // btsearch
+            // 
+            this.btsearch.AnimationHoverSpeed = 0.07F;
+            this.btsearch.AnimationSpeed = 0.03F;
+            this.btsearch.BackColor = System.Drawing.Color.Transparent;
+            this.btsearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.btsearch.BorderColor = System.Drawing.Color.Black;
+            this.btsearch.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btsearch.FocusedColor = System.Drawing.Color.Empty;
+            this.btsearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btsearch.ForeColor = System.Drawing.Color.White;
+            this.btsearch.Image = null;
+            this.btsearch.ImageSize = new System.Drawing.Size(30, 30);
+            this.btsearch.Location = new System.Drawing.Point(1471, 105);
+            this.btsearch.Name = "btsearch";
+            this.btsearch.OnHoverBaseColor = System.Drawing.Color.CadetBlue;
+            this.btsearch.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btsearch.OnHoverForeColor = System.Drawing.Color.White;
+            this.btsearch.OnHoverImage = null;
+            this.btsearch.OnPressedColor = System.Drawing.Color.Black;
+            this.btsearch.Radius = 8;
+            this.btsearch.Size = new System.Drawing.Size(177, 41);
+            this.btsearch.TabIndex = 73;
+            this.btsearch.Text = "Lọc";
+            this.btsearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btsearch.Click += new System.EventHandler(this.btsearch_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1188, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(158, 24);
+            this.label3.TabIndex = 76;
+            this.label3.Text = "Nhập Tên Cần tìm";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(904, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(140, 24);
+            this.label4.TabIndex = 77;
+            this.label4.Text = "Chọn Theo Loại";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(631, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 24);
+            this.label5.TabIndex = 77;
+            this.label5.Text = "Chọn Ngày";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(217, 102);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 80;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // btdelete
+            // 
+            this.btdelete.BackColor = System.Drawing.Color.White;
+            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
+            this.btdelete.ImageActive = null;
+            this.btdelete.Location = new System.Drawing.Point(158, 105);
+            this.btdelete.Name = "btdelete";
+            this.btdelete.Size = new System.Drawing.Size(40, 40);
+            this.btdelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btdelete.TabIndex = 60;
+            this.btdelete.TabStop = false;
+            this.btdelete.Zoom = 10;
+            this.btdelete.Click += new System.EventHandler(this.btdelete_Click);
+            // 
+            // btedit
+            // 
+            this.btedit.BackColor = System.Drawing.Color.White;
+            this.btedit.Image = ((System.Drawing.Image)(resources.GetObject("btedit.Image")));
+            this.btedit.ImageActive = null;
+            this.btedit.Location = new System.Drawing.Point(99, 106);
+            this.btedit.Name = "btedit";
+            this.btedit.Size = new System.Drawing.Size(40, 40);
+            this.btedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btedit.TabIndex = 60;
+            this.btedit.TabStop = false;
+            this.btedit.Zoom = 10;
+            this.btedit.Click += new System.EventHandler(this.btedit_Click);
+            // 
+            // btadd
+            // 
+            this.btadd.BackColor = System.Drawing.Color.White;
+            this.btadd.Image = ((System.Drawing.Image)(resources.GetObject("btadd.Image")));
+            this.btadd.ImageActive = null;
+            this.btadd.Location = new System.Drawing.Point(43, 105);
+            this.btadd.Name = "btadd";
+            this.btadd.Size = new System.Drawing.Size(40, 40);
+            this.btadd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btadd.TabIndex = 60;
+            this.btadd.TabStop = false;
+            this.btadd.Zoom = 10;
+            this.btadd.Click += new System.EventHandler(this.bunifuImageButton1_Click_1);
+            // 
             // btprint
             // 
             this.btprint.AnimationHoverSpeed = 0.07F;
@@ -276,166 +436,6 @@
             this.btprint.Text = "In";
             this.btprint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btprint.Click += new System.EventHandler(this.btprint_Click);
-            // 
-            // txtcategory
-            // 
-            this.txtcategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtcategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtcategory.BackColor = System.Drawing.Color.Transparent;
-            this.txtcategory.BaseColor = System.Drawing.Color.White;
-            this.txtcategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtcategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtcategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtcategory.FocusedColor = System.Drawing.Color.Empty;
-            this.txtcategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtcategory.ForeColor = System.Drawing.Color.Black;
-            this.txtcategory.FormattingEnabled = true;
-            this.txtcategory.ItemHeight = 23;
-            this.txtcategory.Location = new System.Drawing.Point(931, 125);
-            this.txtcategory.Name = "txtcategory";
-            this.txtcategory.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtcategory.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.txtcategory.Size = new System.Drawing.Size(267, 29);
-            this.txtcategory.TabIndex = 61;
-            this.txtcategory.Tag = "Chọn theo loại";
-            this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
-            this.txtcategory.Click += new System.EventHandler(this.txtcategory_Click);
-            // 
-            // txtdate
-            // 
-            this.txtdate.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.CustomFormat = null;
-            this.txtdate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtdate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdate.ForeColor = System.Drawing.Color.White;
-            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtdate.Location = new System.Drawing.Point(658, 125);
-            this.txtdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtdate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.OnPressedColor = System.Drawing.Color.Black;
-            this.txtdate.Size = new System.Drawing.Size(267, 36);
-            this.txtdate.TabIndex = 62;
-            this.txtdate.Text = "5/15/2021";
-            this.txtdate.Value = new System.DateTime(2021, 5, 15, 17, 42, 21, 782);
-            // 
-            // btsearch
-            // 
-            this.btsearch.AnimationHoverSpeed = 0.07F;
-            this.btsearch.AnimationSpeed = 0.03F;
-            this.btsearch.BackColor = System.Drawing.Color.Transparent;
-            this.btsearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.btsearch.BorderColor = System.Drawing.Color.Black;
-            this.btsearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btsearch.FocusedColor = System.Drawing.Color.Empty;
-            this.btsearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsearch.ForeColor = System.Drawing.Color.White;
-            this.btsearch.Image = null;
-            this.btsearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btsearch.Location = new System.Drawing.Point(1494, 120);
-            this.btsearch.Name = "btsearch";
-            this.btsearch.OnHoverBaseColor = System.Drawing.Color.CadetBlue;
-            this.btsearch.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btsearch.OnHoverForeColor = System.Drawing.Color.White;
-            this.btsearch.OnHoverImage = null;
-            this.btsearch.OnPressedColor = System.Drawing.Color.Black;
-            this.btsearch.Radius = 8;
-            this.btsearch.Size = new System.Drawing.Size(177, 41);
-            this.btsearch.TabIndex = 73;
-            this.btsearch.Text = "Lọc";
-            this.btsearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btsearch.Click += new System.EventHandler(this.btsearch_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1211, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 24);
-            this.label3.TabIndex = 76;
-            this.label3.Text = "Nhập Tên Cần tìm";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(927, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 24);
-            this.label4.TabIndex = 77;
-            this.label4.Text = "Chọn Theo Loại";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(654, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 24);
-            this.label5.TabIndex = 77;
-            this.label5.Text = "Chọn Ngày";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(240, 117);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(40, 40);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 80;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // btdelete
-            // 
-            this.btdelete.BackColor = System.Drawing.Color.White;
-            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
-            this.btdelete.ImageActive = null;
-            this.btdelete.Location = new System.Drawing.Point(181, 120);
-            this.btdelete.Name = "btdelete";
-            this.btdelete.Size = new System.Drawing.Size(40, 40);
-            this.btdelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btdelete.TabIndex = 60;
-            this.btdelete.TabStop = false;
-            this.btdelete.Zoom = 10;
-            this.btdelete.Click += new System.EventHandler(this.btdelete_Click);
-            // 
-            // btedit
-            // 
-            this.btedit.BackColor = System.Drawing.Color.White;
-            this.btedit.Image = ((System.Drawing.Image)(resources.GetObject("btedit.Image")));
-            this.btedit.ImageActive = null;
-            this.btedit.Location = new System.Drawing.Point(122, 121);
-            this.btedit.Name = "btedit";
-            this.btedit.Size = new System.Drawing.Size(40, 40);
-            this.btedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btedit.TabIndex = 60;
-            this.btedit.TabStop = false;
-            this.btedit.Zoom = 10;
-            this.btedit.Click += new System.EventHandler(this.btedit_Click);
-            // 
-            // btadd
-            // 
-            this.btadd.BackColor = System.Drawing.Color.White;
-            this.btadd.Image = ((System.Drawing.Image)(resources.GetObject("btadd.Image")));
-            this.btadd.ImageActive = null;
-            this.btadd.Location = new System.Drawing.Point(66, 120);
-            this.btadd.Name = "btadd";
-            this.btadd.Size = new System.Drawing.Size(40, 40);
-            this.btadd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btadd.TabIndex = 60;
-            this.btadd.TabStop = false;
-            this.btadd.Zoom = 10;
-            this.btadd.Click += new System.EventHandler(this.bunifuImageButton1_Click_1);
             // 
             // us_input
             // 

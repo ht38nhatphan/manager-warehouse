@@ -38,7 +38,7 @@ namespace test1.usercontrol
             }
             else
             {
-                string sql = "select * from Categories where  CategoryName like N'" + name + "%'";
+                string sql = "select * from Categories where  CategoryName like N'" + txtname.Text + "%'";
                 mydatatable = mydatasevices.RunQuery(sql);
                 bunifuCustomDataGrid1.DataSource = mydatatable;
             }
@@ -89,8 +89,17 @@ namespace test1.usercontrol
 
         private void cb_all_CheckedChanged(object sender, EventArgs e)
         {
-            cheakall = 1;
-            txtname.Clear();
+            if (cb_all.Checked == true)
+            {
+                cheakall = 1;
+                txtname.Clear();
+            }
+            else
+            {
+                cheakall = 0;
+                txtname.Clear();
+            }
+           
         }
 
         private void bunifuCustomDataGrid1_RowEnter(object sender, DataGridViewCellEventArgs e)

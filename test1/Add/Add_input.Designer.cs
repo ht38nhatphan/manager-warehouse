@@ -32,12 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtquantity = new Guna.UI.WinForms.GunaTextBox();
             this.txtpriceoutput = new Guna.UI.WinForms.GunaTextBox();
             this.txtpriceinput = new Guna.UI.WinForms.GunaTextBox();
-            this.txtdate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -81,21 +79,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Phiếu Nhập";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(486, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 24);
-            this.label2.TabIndex = 61;
-            this.label2.Text = "Ngày nhập";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(975, 126);
+            this.label6.Location = new System.Drawing.Point(486, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 24);
             this.label6.TabIndex = 64;
@@ -111,7 +99,7 @@
             this.txtquantity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtquantity.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtquantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtquantity.Location = new System.Drawing.Point(978, 162);
+            this.txtquantity.Location = new System.Drawing.Point(489, 162);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PasswordChar = '\0';
             this.txtquantity.SelectedText = "";
@@ -129,7 +117,7 @@
             this.txtpriceoutput.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtpriceoutput.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpriceoutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtpriceoutput.Location = new System.Drawing.Point(489, 296);
+            this.txtpriceoutput.Location = new System.Drawing.Point(33, 298);
             this.txtpriceoutput.Name = "txtpriceoutput";
             this.txtpriceoutput.PasswordChar = '\0';
             this.txtpriceoutput.SelectedText = "";
@@ -147,7 +135,7 @@
             this.txtpriceinput.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtpriceinput.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpriceinput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtpriceinput.Location = new System.Drawing.Point(30, 296);
+            this.txtpriceinput.Location = new System.Drawing.Point(984, 157);
             this.txtpriceinput.Name = "txtpriceinput";
             this.txtpriceinput.PasswordChar = '\0';
             this.txtpriceinput.SelectedText = "";
@@ -155,35 +143,11 @@
             this.txtpriceinput.TabIndex = 67;
             this.txtpriceinput.Tag = "";
             // 
-            // txtdate
-            // 
-            this.txtdate.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.CustomFormat = null;
-            this.txtdate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtdate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdate.ForeColor = System.Drawing.Color.White;
-            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtdate.Location = new System.Drawing.Point(486, 164);
-            this.txtdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtdate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtdate.OnPressedColor = System.Drawing.Color.Black;
-            this.txtdate.Size = new System.Drawing.Size(270, 36);
-            this.txtdate.TabIndex = 69;
-            this.txtdate.Text = "5/15/2021";
-            this.txtdate.Value = new System.DateTime(2021, 5, 15, 17, 42, 21, 782);
-            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 265);
+            this.label7.Location = new System.Drawing.Point(980, 126);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 24);
             this.label7.TabIndex = 70;
@@ -193,7 +157,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(486, 265);
+            this.label8.Location = new System.Drawing.Point(30, 267);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 24);
             this.label8.TabIndex = 71;
@@ -286,14 +250,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtdate);
             this.Controls.Add(this.txtpriceinput);
             this.Controls.Add(this.txtpriceoutput);
             this.Controls.Add(this.txtproduct);
             this.Controls.Add(this.txtquantity);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Add_input";
@@ -312,12 +274,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaTextBox txtquantity;
         private Guna.UI.WinForms.GunaTextBox txtpriceoutput;
         private Guna.UI.WinForms.GunaTextBox txtpriceinput;
-        private Guna.UI.WinForms.GunaDateTimePicker txtdate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;

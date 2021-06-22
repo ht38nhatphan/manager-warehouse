@@ -23,6 +23,22 @@ namespace test1.usercontrol
         public string nameproduct, namecategory, namesupplier, date, quantity, inputprice, outputprice, note,unit;
         public int idiput;
         private bool cheakall = false;
+        //display ngày hôm nay
+        public void display_date()
+        {
+            mydatasevices = new dataservices();
+            mydatatable = new DataTable();
+            string sql = string.Format("select c.ProductName,e.CategoryName,d.CompanyName,a.InputDate,b.Quantity,b.InputPrice,b.OutputPrice,b.Note,NameUnit " +
+              "from Input a join InputDetails b " +
+              "on a.InputID = b.InputID " +
+              "join Products c on c.ProductID = b.ProductID " +
+              "join Suppliers d on d.SupplierID = c.SupplierID " +
+              "join Categories e on e.CategoryID = c.CategoryID " +
+              "join Unit f on f.UnitID = c.UnitID where InputDate = convert(date,('{0}'))", txtdate.Text);
+            mydatatable = mydatasevices.RunQuery(sql);
+            txt_total_amount.Text = sumdetall(2);
+            bunifuCustomDataGrid2.DataSource = mydatatable;
+        }
         //display
         public void display()
         {
@@ -95,6 +111,7 @@ namespace test1.usercontrol
             return mydatatable1.Rows[0]["tongtien"].ToString();
 
         }
+        //search
         private void btsearch_Click(object sender, EventArgs e)
         {
             mydatasevices = new dataservices();
@@ -177,6 +194,7 @@ namespace test1.usercontrol
         //click in category
         private void txtcategory_Click(object sender, EventArgs e)
         {
+            txtcategory.Items.Clear();
             // click vào add combobox vào
             addcombox();
         }
@@ -187,8 +205,9 @@ namespace test1.usercontrol
 
             mydatasevices = new dataservices();
             if (mydatasevices.OpenDB(@"ADMIN\SQLEXPRESS", "QL_KHO_HANG", "sa", "123456") == false) return;
-            display();
-            txt_total_amount.Text = sumdetall(1);
+            display_date();
+            //txt_total_amount.Text = sumdetall(1);
+            //display();
         }
         //lấy id input lọc theo ngày
         public int id_iput()
@@ -197,6 +216,19 @@ namespace test1.usercontrol
             string sql = string.Format("select * from Input where InputDate = '{0}'", date);
             DataTable dt = mydatasevices.RunQuery(sql);
             return Convert.ToInt32(dt.Rows[0]["InputID"].ToString());
+        }
+        //lấy idproduct
+        public int layidpr()
+        {
+            mydatasevices = new dataservices();
+            string sql = string.Format("select ProductID from Products a join Categories b " +
+                "on a.CategoryID = b.CategoryID " +
+                "join Suppliers c on c.SupplierID = a.SupplierID " +
+                "join Unit d on d.UnitID = a.UnitID " +
+                "where CategoryName =N'{0}' and ProductName =N'{1}' and NameUnit =N'{2}'and CompanyName =N'{3}'", namecategory, nameproduct, unit, namesupplier);
+            DataTable dt = mydatasevices.RunQuery(sql);
+            int id = Convert.ToInt32(dt.Rows[0]["ProductID"].ToString());
+            return id;
         }
         private void bunifuCustomDataGrid2_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -219,7 +251,8 @@ namespace test1.usercontrol
             //cheack = false;
             addformkhac.product product = new addformkhac.product();
             product.ShowDialog();
-            display();
+            //show hàng mới lên
+            display_date();
             
         }
 
@@ -232,20 +265,27 @@ namespace test1.usercontrol
         //lấy idiputdetails
         public int id_details()
         {
+
+
             mydatasevices = new dataservices();
             string sql = string.Format("select InputDetailID from InputDetails a join Input b on a.InputID = b.InputID join Products c on c.ProductID = a.ProductID join Suppliers d on d.SupplierID = c.SupplierID join Categories e on e.CategoryID = c.CategoryID join Unit f on f.UnitID = c.UnitID  " +
-               "where NameUnit = N'{0}' and ProductName = N'{1}' and CategoryName = N'{2}' and CompanyName = N'{3}' and a.InputPrice = {4}", unit, nameproduct, namecategory, namesupplier, inputprice);
+               "where NameUnit = N'{0}' and ProductName = N'{1}' and CategoryName = N'{2}' and CompanyName = N'{3}' and a.InputPrice = {4} and b.InputDate = N'{5}'", unit, nameproduct, namecategory, namesupplier, inputprice, txtdate.Text);
             DataTable n = mydatasevices.RunQuery(sql);
             return (int)n.Rows[0]["InputDetailID"];
         }
+        //delete
         private void btdelete_Click(object sender, EventArgs e)
         {
             mydatasevices = new dataservices();
             DialogResult dr = MessageBox.Show("Chắc chắn xoá sản phẩm này không?", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == System.Windows.Forms.DialogResult.No) return;
             string sql = string.Format("delete from InputDetails where InputDetailID = {0}", id_details());
+            //nếu xoá sản phẩm trong phiếu nhập cập nhập lên kho hàng
+            string query = string.Format("Update Warehouse set Quantity = Quantity - {0} where  ProductID = {1}", quantity, layidpr());
+            mydatasevices.RunQuery(query);
+            //xoá sản phẩm
             mydatasevices.RunQuery(sql);
-            display();
+            display_date();
 
         }
         //reset

@@ -16,7 +16,12 @@ namespace test1
         {
             InitializeComponent();
         }
-
+        form_Sign_up form_Sign_Up = new form_Sign_up();
+        public form_main(form_Sign_up form)
+        {
+            InitializeComponent();
+            form_Sign_Up = form;
+        }
         //private void btunit_Click(object sender, EventArgs e)
         //{
         //    add_unit1.Visible = true;
@@ -35,6 +40,8 @@ namespace test1
 
         private void btclose_Click(object sender, EventArgs e)
         {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn đăng xuất không!", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.No) return;
             Close();
         }
 
@@ -48,11 +55,18 @@ namespace test1
 
         private void form_main_Load(object sender, EventArgs e)
         {
+            
+            
+            namelb.Text = "Xin Chào " + form_Sign_Up.name;
             us_input1.Visible = false;
             us_output1.Visible = false;
             add_suppliers1.Visible = false;
             add_product1.Visible = false;
             add_categories1.Visible = false;
+            us_statistical_b11.Visible = false;
+            us_product_warehouse1.Visible = false;
+            us_customer1.Visible = false;
+            
         }
 
         private void btoutput_Click(object sender, EventArgs e)
@@ -84,6 +98,46 @@ namespace test1
         {
             us_statistical1.Visible = true;
             us_statistical1.BringToFront();
+            us_statistical1.display();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btstatical_Click(object sender, EventArgs e)
+        {
+            us_statistical_b11.Visible = true;
+            us_statistical_b11.BringToFront();
+
+        }
+
+        private void warehouse_Click(object sender, EventArgs e)
+        {
+            us_product_warehouse1.Visible = true;
+            us_product_warehouse1.BringToFront();
+            us_product_warehouse1.display();
+        }
+
+        private void customer_Click(object sender, EventArgs e)
+        {
+            us_customer1.Visible = true;
+            us_customer1.BringToFront();
+            
+        }
+        //show user
+        public string id;
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            id = form_Sign_Up.id;
+            Add.users users = new Add.users(this);
+            users.ShowDialog();
         }
     }
 }

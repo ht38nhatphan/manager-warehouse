@@ -33,9 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtpass = new Guna.UI.WinForms.GunaTextBox();
+            this.txtname = new Guna.UI.WinForms.GunaTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtpass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,9 +82,10 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.txtpass);
             this.panel2.Controls.Add(this.txtname);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
@@ -93,6 +94,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(332, 526);
             this.panel2.TabIndex = 1;
+            // 
+            // txtpass
+            // 
+            this.txtpass.BaseColor = System.Drawing.Color.White;
+            this.txtpass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpass.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtpass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtpass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtpass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtpass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtpass.Location = new System.Drawing.Point(24, 321);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.SelectedText = "";
+            this.txtpass.Size = new System.Drawing.Size(285, 36);
+            this.txtpass.TabIndex = 1;
+            this.txtpass.Tag = "";
+            // 
+            // txtname
+            // 
+            this.txtname.BaseColor = System.Drawing.Color.White;
+            this.txtname.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
+            this.txtname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtname.Location = new System.Drawing.Point(24, 205);
+            this.txtname.Name = "txtname";
+            this.txtname.PasswordChar = '\0';
+            this.txtname.SelectedText = "";
+            this.txtname.Size = new System.Drawing.Size(285, 36);
+            this.txtname.TabIndex = 0;
+            this.txtname.Tag = "";
             // 
             // button1
             // 
@@ -103,46 +140,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 47);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Sign Up";
+            this.button1.Text = "Đăng Nhập";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtpass
-            // 
-            this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtpass.HintForeColor = System.Drawing.Color.Empty;
-            this.txtpass.HintText = "";
-            this.txtpass.isPassword = true;
-            this.txtpass.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtpass.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtpass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtpass.LineThickness = 3;
-            this.txtpass.Location = new System.Drawing.Point(24, 294);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(4);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(285, 44);
-            this.txtpass.TabIndex = 1;
-            this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtname
-            // 
-            this.txtname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtname.HintForeColor = System.Drawing.Color.Empty;
-            this.txtname.HintText = "";
-            this.txtname.isPassword = false;
-            this.txtname.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtname.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.txtname.LineThickness = 3;
-            this.txtname.Location = new System.Drawing.Point(24, 197);
-            this.txtname.Margin = new System.Windows.Forms.Padding(4);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(285, 44);
-            this.txtname.TabIndex = 0;
-            this.txtname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -163,9 +163,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
             this.label5.Location = new System.Drawing.Point(19, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 29);
+            this.label5.Size = new System.Drawing.Size(113, 29);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Password:";
+            this.label5.Text = "Mật Khẩu";
             // 
             // label3
             // 
@@ -174,20 +174,20 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
             this.label3.Location = new System.Drawing.Point(19, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 29);
+            this.label3.Size = new System.Drawing.Size(189, 29);
             this.label3.TabIndex = 0;
-            this.label3.Text = "User Name:";
+            this.label3.Text = "Tên Đăng Nhập:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(138)))), ((int)(((byte)(252)))));
-            this.label2.Location = new System.Drawing.Point(73, 44);
+            this.label2.Location = new System.Drawing.Point(43, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 48);
+            this.label2.Size = new System.Drawing.Size(244, 48);
             this.label2.TabIndex = 0;
-            this.label2.Text = " Sign Up";
+            this.label2.Text = "Đăng Nhập";
             // 
             // form_Sign_up
             // 
@@ -200,6 +200,7 @@
             this.Name = "form_Sign_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.form_Sign_up_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -219,9 +220,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpass;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtname;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaTextBox txtpass;
+        private Guna.UI.WinForms.GunaTextBox txtname;
     }
 }
 

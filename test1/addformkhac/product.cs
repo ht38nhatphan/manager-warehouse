@@ -87,6 +87,7 @@ namespace test1.addformkhac
             mydatatable = mydatasevices.RunQuery(sql);
             bunifuCustomDataGrid1.DataSource = mydatatable;
         }
+        //tìm kiếm
         private void btsearch_Click(object sender, EventArgs e)
         {
             mydatasevices = new dataservices();

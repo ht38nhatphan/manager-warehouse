@@ -222,7 +222,7 @@
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -232,7 +232,7 @@
     <value>5, 73</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 18</value>
+    <value>105, 24</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -256,7 +256,7 @@
     <value>True</value>
   </data>
   <data name="txtinput.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt</value>
+    <value>Calibri, 19.8000011pt</value>
   </data>
   <data name="txtinput.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -265,7 +265,7 @@
     <value>3, 20</value>
   </data>
   <data name="txtinput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>102, 41</value>
   </data>
   <data name="txtinput.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <data name="gunaImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -414,7 +414,7 @@
     <value>True</value>
   </data>
   <data name="txtoutput.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt</value>
+    <value>Calibri, 19.8000011pt</value>
   </data>
   <data name="txtoutput.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -423,7 +423,7 @@
     <value>3, 20</value>
   </data>
   <data name="txtoutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>102, 41</value>
   </data>
   <data name="txtoutput.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -447,7 +447,7 @@
     <value>True</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10.2pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -456,7 +456,7 @@
     <value>5, 73</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 21</value>
+    <value>99, 24</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -495,7 +495,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="gunaImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -646,7 +646,7 @@
     <value>True</value>
   </data>
   <data name="txtsupplier.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt</value>
+    <value>Calibri, 19.8000011pt</value>
   </data>
   <data name="txtsupplier.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -655,7 +655,7 @@
     <value>3, 20</value>
   </data>
   <data name="txtsupplier.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>102, 41</value>
   </data>
   <data name="txtsupplier.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -679,16 +679,16 @@
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10.2pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 73</value>
+    <value>-4, 70</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 21</value>
+    <value>122, 24</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -727,7 +727,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="gunaImageButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -819,7 +819,7 @@
     <value>True</value>
   </data>
   <data name="txtprouct.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt</value>
+    <value>Calibri, 19.8000011pt</value>
   </data>
   <data name="txtprouct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -828,7 +828,7 @@
     <value>3, 20</value>
   </data>
   <data name="txtprouct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>102, 41</value>
   </data>
   <data name="txtprouct.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -852,7 +852,7 @@
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10.2pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -861,7 +861,7 @@
     <value>5, 73</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 21</value>
+    <value>92, 24</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -900,7 +900,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="gunaImageButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1032,7 +1032,7 @@
     <value>True</value>
   </data>
   <data name="txtcustomer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt</value>
+    <value>Calibri, 19.8000011pt</value>
   </data>
   <data name="txtcustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1041,7 +1041,7 @@
     <value>3, 20</value>
   </data>
   <data name="txtcustomer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>102, 41</value>
   </data>
   <data name="txtcustomer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1065,7 +1065,7 @@
     <value>True</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 7.8pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1074,7 +1074,7 @@
     <value>5, 73</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
+    <value>106, 24</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1113,7 +1113,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="bunifuImageButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1193,7 +1193,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton5.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="bunifuImageButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1273,7 +1273,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="bunifuImageButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1353,7 +1353,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1433,7 +1433,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton2.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1513,19 +1513,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.2pt</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 13</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 32</value>
+    <value>157, 32</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1543,7 +1543,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 242</value>
@@ -1564,7 +1564,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1594,7 +1594,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1627,57 +1627,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btsee1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1556, 966</value>
-  </data>
-  <data name="btsee1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 36</value>
-  </data>
-  <data name="btsee1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btsee1.Text" xml:space="preserve">
-    <value>Xem thêm</value>
-  </data>
-  <data name="&gt;&gt;btsee1.Name" xml:space="preserve">
-    <value>btsee1</value>
-  </data>
-  <data name="&gt;&gt;btsee1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btsee1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btsee1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1559, 579</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 36</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Xem thêm</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <metadata name="FirstName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1716,14 +1665,23 @@
   <data name="NameUnit.Width" type="System.Int32, mscorlib">
     <value>200</value>
   </data>
-  <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="SĐS.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+  <data name="SĐS.HeaderText" xml:space="preserve">
     <value>Số Lượng Xuất</value>
   </data>
-  <data name="dataGridViewTextBoxColumn3.Width" type="System.Int32, mscorlib">
+  <data name="SĐS.Width" type="System.Int32, mscorlib">
     <value>250</value>
+  </data>
+  <metadata name="DD.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DD.HeaderText" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="DD.Width" type="System.Int32, mscorlib">
+    <value>200</value>
   </data>
   <metadata name="OutputDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1734,134 +1692,35 @@
   <data name="OutputDate.Width" type="System.Int32, mscorlib">
     <value>200</value>
   </data>
-  <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="D.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="dataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+  <data name="D.HeaderText" xml:space="preserve">
     <value>Ghi Chú</value>
   </data>
-  <data name="dataGridViewTextBoxColumn4.Width" type="System.Int32, mscorlib">
+  <data name="D.Width" type="System.Int32, mscorlib">
     <value>300</value>
   </data>
-  <data name="bunifuCustomDataGrid1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="outp.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 674</value>
   </data>
-  <data name="bunifuCustomDataGrid1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="outp.Size" type="System.Drawing.Size, System.Drawing">
     <value>1613, 272</value>
   </data>
-  <data name="bunifuCustomDataGrid1.TabIndex" type="System.Int32, mscorlib">
+  <data name="outp.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid1.Name" xml:space="preserve">
-    <value>bunifuCustomDataGrid1</value>
+  <data name="&gt;&gt;outp.Name" xml:space="preserve">
+    <value>outp</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid1.Type" xml:space="preserve">
+  <data name="&gt;&gt;outp.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;outp.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;outp.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <metadata name="ProductName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="ProductName.HeaderText" xml:space="preserve">
-    <value>Tên Sản Phẩm</value>
-  </data>
-  <data name="ProductName.Width" type="System.Int32, mscorlib">
-    <value>300</value>
-  </data>
-  <metadata name="dataGridViewTextBoxColumn5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
-    <value>Đơn Vị Tính</value>
-  </data>
-  <metadata name="CategoryName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="CategoryName.HeaderText" xml:space="preserve">
-    <value>Tên Loại Sản Phẩm</value>
-  </data>
-  <data name="CategoryName.Width" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <metadata name="CompanyName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="CompanyName.HeaderText" xml:space="preserve">
-    <value>Tên Nhà Cung Cấp</value>
-  </data>
-  <data name="CompanyName.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <metadata name="InputDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="InputDate.HeaderText" xml:space="preserve">
-    <value>Ngày Nhập</value>
-  </data>
-  <data name="InputDate.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Quantity.HeaderText" xml:space="preserve">
-    <value>Số Lượng Nhập</value>
-  </data>
-  <data name="Quantity.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <metadata name="InputPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="InputPrice.HeaderText" xml:space="preserve">
-    <value>Giá Nhập </value>
-  </data>
-  <data name="InputPrice.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <metadata name="OutputPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="OutputPrice.HeaderText" xml:space="preserve">
-    <value>Giá Xuất</value>
-  </data>
-  <data name="OutputPrice.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <metadata name="Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Note.HeaderText" xml:space="preserve">
-    <value>Ghi Chú</value>
-  </data>
-  <data name="Note.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="bunifuCustomDataGrid2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 295</value>
-  </data>
-  <data name="bunifuCustomDataGrid2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1616, 254</value>
-  </data>
-  <data name="bunifuCustomDataGrid2.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid2.Name" xml:space="preserve">
-    <value>bunifuCustomDataGrid2</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomDataGrid2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1871,6 +1730,108 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
+  </data>
+  <metadata name="ProductName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ProductName.HeaderText" xml:space="preserve">
+    <value>Tên Sản Phẩm</value>
+  </data>
+  <data name="ProductName.Width" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <metadata name="CategoryName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CategoryName.HeaderText" xml:space="preserve">
+    <value>Tên Loại Sản Phẩm</value>
+  </data>
+  <data name="CategoryName.Width" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <metadata name="CompanyName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CompanyName.HeaderText" xml:space="preserve">
+    <value>Tên Nhà Cung Cấp</value>
+  </data>
+  <data name="CompanyName.Width" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <metadata name="InputDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="InputDate.HeaderText" xml:space="preserve">
+    <value>Ngày Nhập</value>
+  </data>
+  <data name="InputDate.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Số Lượng</value>
+  </data>
+  <data name="Column1.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <metadata name="column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="column2.HeaderText" xml:space="preserve">
+    <value>Giá Nhập</value>
+  </data>
+  <data name="column2.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Giá Xuất</value>
+  </data>
+  <data name="Column3.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <metadata name="column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="column4.HeaderText" xml:space="preserve">
+    <value>Ghi Chú</value>
+  </data>
+  <data name="column4.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column5.HeaderText" xml:space="preserve">
+    <value>Đơn Vị Tính</value>
+  </data>
+  <data name="Column5.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="inth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 310</value>
+  </data>
+  <data name="inth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1616, 269</value>
+  </data>
+  <data name="inth.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;inth.Name" xml:space="preserve">
+    <value>inth</value>
+  </data>
+  <data name="&gt;&gt;inth.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inth.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inth.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1902,10 +1863,16 @@
   <data name="&gt;&gt;NameUnit.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Name" xml:space="preserve">
-    <value>dataGridViewTextBoxColumn3</value>
+  <data name="&gt;&gt;SĐS.Name" xml:space="preserve">
+    <value>SĐS</value>
   </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Type" xml:space="preserve">
+  <data name="&gt;&gt;SĐS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DD.Name" xml:space="preserve">
+    <value>DD</value>
+  </data>
+  <data name="&gt;&gt;DD.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OutputDate.Name" xml:space="preserve">
@@ -1914,22 +1881,22 @@
   <data name="&gt;&gt;OutputDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn4.Name" xml:space="preserve">
-    <value>dataGridViewTextBoxColumn4</value>
+  <data name="&gt;&gt;D.Name" xml:space="preserve">
+    <value>D</value>
   </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn4.Type" xml:space="preserve">
+  <data name="&gt;&gt;D.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaElipse1.Name" xml:space="preserve">
+    <value>gunaElipse1</value>
+  </data>
+  <data name="&gt;&gt;gunaElipse1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipse, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;ProductName.Name" xml:space="preserve">
     <value>ProductName</value>
   </data>
   <data name="&gt;&gt;ProductName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn5.Name" xml:space="preserve">
-    <value>dataGridViewTextBoxColumn5</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewTextBoxColumn5.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CategoryName.Name" xml:space="preserve">
@@ -1950,35 +1917,35 @@
   <data name="&gt;&gt;InputDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Quantity.Name" xml:space="preserve">
-    <value>Quantity</value>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
   </data>
-  <data name="&gt;&gt;Quantity.Type" xml:space="preserve">
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;InputPrice.Name" xml:space="preserve">
-    <value>InputPrice</value>
+  <data name="&gt;&gt;column2.Name" xml:space="preserve">
+    <value>column2</value>
   </data>
-  <data name="&gt;&gt;InputPrice.Type" xml:space="preserve">
+  <data name="&gt;&gt;column2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OutputPrice.Name" xml:space="preserve">
-    <value>OutputPrice</value>
+  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
+    <value>Column3</value>
   </data>
-  <data name="&gt;&gt;OutputPrice.Type" xml:space="preserve">
+  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Note.Name" xml:space="preserve">
-    <value>Note</value>
+  <data name="&gt;&gt;column4.Name" xml:space="preserve">
+    <value>column4</value>
   </data>
-  <data name="&gt;&gt;Note.Type" xml:space="preserve">
+  <data name="&gt;&gt;column4.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gunaElipse1.Name" xml:space="preserve">
-    <value>gunaElipse1</value>
+  <data name="&gt;&gt;Column5.Name" xml:space="preserve">
+    <value>Column5</value>
   </data>
-  <data name="&gt;&gt;gunaElipse1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaElipse, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="&gt;&gt;Column5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>us_statistical</value>
