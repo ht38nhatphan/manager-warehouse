@@ -110,7 +110,7 @@ namespace test1.usercontrol
             else if(txtcategory.Text== "Loại Sản Phẩm")
             {
                 sql = string.Format("create or alter view thongkeloaisp as select Sum(a.OutputPrice*b.Quantity)- sum(a.InputPrice*b.Quantity)as spdoanhthu,Sum(a.OutputPrice*b.Quantity) as giaxuat,d.CategoryID from Warehouse a join OutputDetails b on a.ProductID = b.ProductID join Output c on c.OutputID = b.OutputID join Products d on d.ProductID = a.ProductID where c.OutputDate between convert(date, ('{0}')) and convert(date,('{1}')) group by d.CategoryID", txtdatel.Text, txtdatel1.Text);
-                sql1 = string.Format("select b.FirstName as N'Tên Khách Hàng',a.spdoanhthu as N'Doanh Thu Theo Sản Phẩm',cast((a.spdoanhthu/a.giaxuat)*100 as nvarchar(max)) + '%' as N'Chiếm %' from thongkekh a join Customers b on a.CustomerID = b.CustomerID  order by spdoanhthu desc");
+                sql1 = string.Format("select b.CategoryName as N'Tên Loại Sản Phẩm',a.spdoanhthu as N'Doanh Thu Theo Sản Phẩm',cast((a.spdoanhthu/a.giaxuat)*100 as nvarchar(max)) + '%' as N'Chiếm %' from thongkenloaisp a join Categories b on a.CategoryID =b.CategoryID  order by spdoanhthu desc");
 
             }
             else if(txtcategory.Text =="Sản Phẩm")

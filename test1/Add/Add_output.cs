@@ -83,6 +83,12 @@ namespace test1.Add
             date_not_click();
 
             mydatasevices = new dataservices();
+            //so lượng không được âm
+            if (Convert.ToInt32(txtquantity.Text) < 0)
+            {
+                messagebox.Warning("Số lượng Không hợp lệ");
+                return;
+            }
             //cheack dữ liệu không dk trống
             if (cheack_the_case.IsEmpty(txtquantity.Text, "Số lượng ") == true) return;
             //kiểm tra số lượng sản phẩm nhập không được nhiều hơn sản phẩm trong kho

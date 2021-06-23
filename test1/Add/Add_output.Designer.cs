@@ -236,6 +236,7 @@
             this.txtprice.Location = new System.Drawing.Point(39, 238);
             this.txtprice.Name = "txtprice";
             this.txtprice.PasswordChar = '\0';
+            this.txtprice.ReadOnly = true;
             this.txtprice.SelectedText = "";
             this.txtprice.Size = new System.Drawing.Size(267, 36);
             this.txtprice.TabIndex = 80;

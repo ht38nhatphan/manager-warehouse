@@ -79,6 +79,21 @@ namespace test1.Add
                 messagebox.Information("Giá xuất không được nhỏ hơn giá nhập!");
                 return;
             }
+            if (Convert.ToInt32(txtquantity.Text) < 0)
+            {
+                messagebox.Warning("Số lượng không hợp lệ!");
+                return;
+            }
+            if (Convert.ToInt32(txtpriceinput.Text) < 0)
+            {
+                messagebox.Warning("Giá Nhập không hợp lệ!");
+                return;
+            }
+            if(Convert.ToInt32(txtpriceoutput.Text) < 0)
+            {
+                messagebox.Warning("Giá xuất không hợp lệ!");
+                return;
+            }
             //Khi nhập vào input cheak nếu trùng sản phẩm nhưng giá nhập khác thì tạo 1 from khác,nhập giá bán vào cập nhập những những sản phẩm mã input và mã product giống nhau trong ngày đó
             //tăng số lượng sản phẩm
                 if (frmproduct.cheak == false)

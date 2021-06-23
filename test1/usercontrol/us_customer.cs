@@ -127,7 +127,12 @@ namespace test1.usercontrol
             mydatasevices = new dataservices();
             DataTable customertable = new DataTable();
             string sql;
-            sql = string.Format("select a.FirstName,a.LastName,a.Address,a.Phone,a.Email,a.CustomerID from Customers a where {0} like N'{1}%'", customera, txtinput.Text);
+            string ns = txtinput.Text;
+            if (customera == "FirstName")
+            {
+                ns = addchuoi(ns);
+            }
+            sql = string.Format("select a.FirstName,a.LastName,a.Address,a.Phone,a.Email,a.CustomerID from Customers a where {0} like N'{1}%'", customera, ns);
             customertable = mydatasevices.RunQuery(sql);
             //nếu không tìm thấy in ra cảnh báo
             if (customertable.Rows.Count == 0)
@@ -144,6 +149,21 @@ namespace test1.usercontrol
                 }
             }
             bunifuCustomDataGrid2.DataSource = customertable;
+        }
+        //sửa chuỗi nếu có nháy
+        private string addchuoi(string a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i].ToString() == "'")
+                {
+                    a = a.Insert(i, "'");
+                    i = i + 2;
+                }
+            }
+
+
+            return a;
         }
     }
 }
